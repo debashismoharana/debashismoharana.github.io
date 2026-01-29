@@ -1,11 +1,34 @@
+# Debashismoharana
 
-### Hey there!
-I am Debashis Moharana from Bhubaneswar, India. Working as a UI developer since 2015. Currently located in Pune, Maharashtra.
+Personal portfolio website built with Angular CLI version 8.3.19.
 
-I have 9+ years of experience in application development, both web and mobile.
-I have knowledge of Javascript, React, Angular, Ionic, HTML, CSS, CoffeeScript, handlebar, backbone, underscore.js, and many more.
+## Development
 
-If you want me to be part of your project or want to work with me on some great ideas,
-mail me at: moharana.debashis@gmail.com
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any source files.
 
-Website: https://debashismoharana.github.io/debashismoharana/
+## Build
+
+Run `ng build` to build the project. Build artifacts will be stored in the `dist/` directory.
+
+### Code Generation
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Testing
+
+Run `ng test` to execute unit tests via Karma.
+
+Run `ng e2e` to execute end-to-end tests via Protractor.
+
+## Deployment
+
+To build and deploy to GitHub Pages:
+```bash
+npm run publish
+```
+
+The site is hosted at https://debashismoharana.in/
+
+## Further Help
+
+For more help on Angular CLI, run `ng help` or visit the [Angular CLI Documentation](https://angular.io/cli).

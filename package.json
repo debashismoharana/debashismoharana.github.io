@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build --source-map=false",
+    "publish": "npm run build && npx angular-cli-ghpages --dir=dist/debashismoharana",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
