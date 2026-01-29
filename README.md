@@ -23,6 +23,7 @@ Run `ng e2e` to execute end-to-end tests via Protractor.
 ## Deployment
 
 To build and deploy to GitHub Pages:
+
 ```bash
 npm run publish
 ```
