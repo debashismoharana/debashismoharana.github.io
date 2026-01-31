@@ -19,7 +19,6 @@ export class GithubReposComponent implements OnInit {
   getGithubRepos() {
     this.githubService.getRepos().subscribe((response) => {
       this.myRepos = response;
-      console.log(this.myRepos);
     }, (error) => {
 
     });
