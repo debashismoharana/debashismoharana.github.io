@@ -8,7 +8,9 @@ import { Repo } from 'src/models/github-repo';
 export class GithubReposService {
 
   constructor(private http: HttpClient) { }
+  
   getRepos() {
-    return this.http.get<Repo[]>('https://api.github.com/users/debashismoharana/repos');
+    // Fetch repositories sorted by stars (most starred repos are typically pinned)
+    return this.http.get<Repo[]>('https://api.github.com/users/debashismoharana/repos?sort=stars&direction=desc&per_page=100');
   }
 }

@@ -57,6 +57,7 @@ export class GithubReposComponent implements OnInit {
     if (this.showAllRepos) {
       return this.myRepos;
     }
+    // Show pinned repos (top 6 repos sorted by stars/popularity) by default
     return this.myRepos.slice(0, this.pinnedReposCount);
   }
 

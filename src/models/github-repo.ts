@@ -5,4 +5,5 @@ export class Repo {
   description: string;
   contributors: string;
   language: string;
+  pinned?: boolean;
 }
