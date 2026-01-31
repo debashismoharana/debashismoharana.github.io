@@ -28,7 +28,9 @@ To build and deploy to GitHub Pages:
 npm run publish
 ```
 
-The site is hosted at https://debashismoharana.in/
+The site is automatically deployed to GitHub Pages on push to master branch.
+
+Access the site at: https://debashismoharana.github.io/
 
 ## Further Help
 
