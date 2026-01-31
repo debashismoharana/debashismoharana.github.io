@@ -18,6 +18,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatButtonModule } from '@angular/material/button';
 import { TopContainerComponent } from './top-container/top-container.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
@@ -40,7 +41,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MatTableModule,
     MatChipsModule,
     MatProgressBarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

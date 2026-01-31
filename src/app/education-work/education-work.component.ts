@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-education-work',
   templateUrl: './education-work.component.html',
-  styleUrls: ['./education-work.component.scss']
+  styleUrls: ['./education-work.component.scss'],
+  standalone: false
 })
 export class EducationWorkComponent implements OnInit {
   breakpointTitle: number;

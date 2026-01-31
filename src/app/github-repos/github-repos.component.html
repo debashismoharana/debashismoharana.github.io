@@ -1,9 +1,25 @@
-<div class="card-container">
-  <mat-card class="card" *ngFor="let repo of myRepos">
-    <div class="name"> <a href="{{repo.html_url}}"> {{ repo.name }} </a> </div>
-    <div class="description"> {{ repo.description }} </div>
-    <mat-chip-list class="language" *ngIf="repo.language" aria-label="Language">
-      <mat-chip color="accent" selected>{{ repo.language }}</mat-chip>
-    </mat-chip-list>
-  </mat-card>
+<div *ngIf="isLoading" class="loading-message">
+  Loading repositories...
+</div>
+<div *ngIf="!isLoading && error" class="error-message">
+  {{ error }}
+</div>
+<div *ngIf="!isLoading && !error && myRepos.length === 0" class="no-repos-message">
+  No repositories found.
+</div>
+<div *ngIf="!isLoading && !error && myRepos.length > 0">
+  <div class="card-container">
+    <mat-card class="card" *ngFor="let repo of displayedRepos; trackBy: trackByRepoId">
+      <div class="name"> <a href="{{repo.html_url}}" target="_blank"> {{ repo.name }} </a> </div>
+      <div class="description" *ngIf="repo.description"> {{ repo.description }} </div>
+      <mat-chip-set class="language" *ngIf="repo.language" aria-label="Language">
+        <mat-chip color="accent" selected>{{ repo.language }}</mat-chip>
+      </mat-chip-set>
+    </mat-card>
+  </div>
+  <div class="show-all-container" *ngIf="myRepos.length > pinnedReposCount">
+    <a class="show-all-link" (click)="toggleShowAll()">
+      {{ showAllRepos ? 'Show Less' : 'Show All Repos' }}
+    </a>
+  </div>
 </div>

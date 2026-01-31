@@ -22,7 +22,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
             "baseHref": "/",
             "deployUrl": "/",
             "assets": [
@@ -47,10 +46,8 @@
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -69,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "debashismoharana:build"
+            "buildTarget": "debashismoharana:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "debashismoharana:build:production"
+              "buildTarget": "debashismoharana:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "debashismoharana:build"
+            "buildTarget": "debashismoharana:build"
           }
         },
         "test": {
@@ -132,5 +129,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

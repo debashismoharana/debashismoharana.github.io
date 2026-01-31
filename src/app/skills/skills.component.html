@@ -22,9 +22,11 @@
 </table>
 
 <h3>Some more tools and frameworks I am familiar with</h3>
-<mat-card class="tools-container">
-  <a href="{{tool.link}}" target="_blank" *ngFor="let tool of tools" class=tools>
-    <img height="30" width="30" title="{{tool.name}}"
-      src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{tool.svgName}}.svg" />
-  </a>
-</mat-card>
+<div class="tools-container">
+  <div class="tools-wrapper">
+    <a href="{{tool.link}}" target="_blank" *ngFor="let tool of tools" class="tools">
+      <img height="30" width="30" title="{{tool.name}}"
+        src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{tool.svgName}}.svg" />
+    </a>
+  </div>
+</div>

@@ -10,10 +10,29 @@ table {
 .tools-container {
   margin-top: 20px;
   text-align: center;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-a {
-  margin: 1%;
+
+.tools-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 10px 0;
+  width: 100%;
 }
-.tools {
-  margin: 16px;
+
+.tools-wrapper .tools {
+  margin: 0;
+  display: block;
+  flex-shrink: 0;
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
 }
