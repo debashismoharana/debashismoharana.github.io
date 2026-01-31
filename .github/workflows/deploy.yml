@@ -9,30 +9,30 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     permissions:
-      contents: read
+      contents: write
       pages: write
       id-token: write
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
-          cache: 'npm'
-      
+          node-version: "22"
+          cache: "npm"
+
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
-      
+
       - name: Build project
         run: npm run build:prod
         env:
-          NODE_OPTIONS: '--openssl-legacy-provider'
-      
+          NODE_OPTIONS: "--openssl-legacy-provider"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
