@@ -644,7 +644,6 @@ let GithubReposComponent = class GithubReposComponent {
     getGithubRepos() {
         this.githubService.getRepos().subscribe((response) => {
             this.myRepos = response;
-            console.log(this.myRepos);
         }, (error) => {
         });
     }

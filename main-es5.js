@@ -878,7 +878,6 @@ function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = 
           var _this = this;
           this.githubService.getRepos().subscribe(function (response) {
             _this.myRepos = response;
-            console.log(_this.myRepos);
           }, function (error) {});
         }
       }]);
