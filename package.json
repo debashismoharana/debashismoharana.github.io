@@ -31,8 +31,8 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.19",
-    "@angular/cli": "~8.3.19",
+    "@angular-devkit/build-angular": "~0.803.29",
+    "@angular/cli": "~21.1.2",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
     "@types/node": "~8.9.4",
@@ -51,7 +51,7 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
     "@angular-devkit/architect": "<0.900 || ^0.900.0-0 || ^9.0.0-0",
-    "firebase-tools": "^6.10.0",
+    "firebase-tools": "^15.5.1",
     "fuzzy": "^0.1.3",
     "inquirer": "^6.2.2",
     "inquirer-autocomplete-prompt": "^1.0.1"
